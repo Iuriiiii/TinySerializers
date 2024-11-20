@@ -14,7 +14,7 @@ export function uInt8ArraySerializer(
   }
 
   options.objectDatabase.getOrInsert(value);
-  
+
   const prefix = new Uint8Array([Opcode.Uint8Array]);
   const serializedLength = numberSerializer(
     value.length,
