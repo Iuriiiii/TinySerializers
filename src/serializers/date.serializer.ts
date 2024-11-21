@@ -5,21 +5,20 @@ import {
 import { mergeBuffers, numberSerializer } from "@online/tinyserializer";
 import { Opcode } from "../enums/mod.ts";
 
-export function uInt8ArraySerializer(
+export function dateSerializer(
   value: unknown,
   options: SerializeOptions,
 ): Uint8Array | null {
-  if (!(value instanceof Uint8Array)) {
+  if (!(value instanceof Date)) {
     return null;
   }
-
+  
   options.objectDatabase.getOrInsert(value);
-
-  const prefix = new Uint8Array([Opcode.Uint8Array]);
-  const serializedLength = numberSerializer(
-    value.length,
+  const prefix = new Uint8Array([Opcode.Date]);
+  const serializedDate = numberSerializer(
+    value.getTime(),
     options,
   );
 
-  return mergeBuffers(prefix, serializedLength, value);
+  return mergeBuffers(prefix, serializedDate);
 }
