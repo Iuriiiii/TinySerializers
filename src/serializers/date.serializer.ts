@@ -1,7 +1,4 @@
-import {
-  NumberSerializationType,
-  type SerializeOptions,
-} from "@online/tinyserializer/types";
+import type { SerializeOptions } from "@online/tinyserializer/types";
 import { mergeBuffers, numberSerializer } from "@online/tinyserializer";
 import { Opcode } from "../enums/mod.ts";
 
@@ -12,7 +9,7 @@ export function dateSerializer(
   if (!(value instanceof Date)) {
     return null;
   }
-  
+
   options.objectDatabase.getOrInsert(value);
   const prefix = new Uint8Array([Opcode.Date]);
   const serializedDate = numberSerializer(

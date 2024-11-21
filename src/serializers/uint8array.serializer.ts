@@ -1,7 +1,4 @@
-import {
-  NumberSerializationType,
-  type SerializeOptions,
-} from "@online/tinyserializer/types";
+import type { SerializeOptions } from "@online/tinyserializer/types";
 import { mergeBuffers, numberSerializer } from "@online/tinyserializer";
 import { Opcode } from "../enums/mod.ts";
 
