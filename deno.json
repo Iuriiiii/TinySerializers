@@ -1,10 +1,10 @@
 {
   "name": "@online/tinyserializers",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "exports": "./mod.ts",
   "tasks": {},
   "imports": {
-    "@online/tinyserializer": "jsr:@online/tinyserializer@^0.0.14",
+    "@online/tinyserializer": "jsr:@online/tinyserializer@^0.0.x",
     "@std/assert": "jsr:@std/assert@1"
   }
 }

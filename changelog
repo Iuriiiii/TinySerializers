@@ -1,7 +1,11 @@
+# 0.0.7
+
+Add `Date` serializer.
+
 # 0.0.1
 
-Update `TinySerialize` and push reference of `uInt8Array` object.
+Update `TinySerialize` and push reference of `uInt8Array` object
 
 # 0.0.1
 
-Add uInt8Array (de)serializer.
+Add uInt8Array (de)serializer
