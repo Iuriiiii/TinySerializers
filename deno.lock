@@ -2,22 +2,22 @@
   "version": "4",
   "specifiers": {
     "jsr:@online/is@0.0": "0.0.2",
-    "jsr:@online/tinyserializer@^0.0.16": "0.0.16",
-    "jsr:@std/assert@1": "1.0.8",
+    "jsr:@online/tinyserializer@^0.0.25": "0.0.25",
+    "jsr:@std/assert@^1.0.10": "1.0.10",
     "jsr:@std/internal@^1.0.5": "1.0.5"
   },
   "jsr": {
     "@online/is@0.0.2": {
       "integrity": "9f3ca6190c4bef05f444938a3ea7896f316daf0ac58d40203f3f6131b17d371b"
     },
-    "@online/tinyserializer@0.0.16": {
-      "integrity": "10fe3ef21a0ed96f04ac923d7a54cb1b0d7a98eb891f1bd7a70bcc902b52cdb0",
+    "@online/tinyserializer@0.0.25": {
+      "integrity": "367cac2a14e7c1a2133147b384be5c54f51008587797bb5eba945b0ed79866ad",
       "dependencies": [
         "jsr:@online/is"
       ]
     },
-    "@std/assert@1.0.8": {
-      "integrity": "ebe0bd7eb488ee39686f77003992f389a06c3da1bbd8022184804852b2fa641b",
+    "@std/assert@1.0.10": {
+      "integrity": "59b5cbac5bd55459a19045d95cc7c2ff787b4f8527c0dd195078ff6f9481fbb3",
       "dependencies": [
         "jsr:@std/internal"
       ]
@@ -28,8 +28,8 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@online/tinyserializer@^0.0.16",
-      "jsr:@std/assert@1"
+      "jsr:@online/tinyserializer@^0.0.25",
+      "jsr:@std/assert@^1.0.10"
     ]
   }
 }
